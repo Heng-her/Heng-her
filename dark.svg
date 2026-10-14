@@ -20,6 +20,30 @@
       <stop offset="100%" stop-color="#00f3ff" stop-opacity="0.1" />
     </linearGradient>
 
+    <!-- Earth Shading & Atmosphere Gradients (Dark) -->
+    <radialGradient id="earth-shading-dark" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="35%" stop-color="#00f3ff" stop-opacity="0.1" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#02040a" stop-opacity="0.95" />
+    </radialGradient>
+
+    <radialGradient id="earth-glow-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#00f3ff" stop-opacity="0.25" />
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="earth-ocean-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1938" />
+      <stop offset="50%" stop-color="#060e22" />
+      <stop offset="100%" stop-color="#02050e" />
+    </linearGradient>
+
+    <clipPath id="earth-clip-dark">
+      <circle cx="565" cy="88" r="42" />
+    </clipPath>
+
     <!-- Filters -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
@@ -233,7 +257,7 @@
     </g>
   </g>
 
-  <!-- ==================== RIGHT COLUMN: SYSTEM INFO (BLACK & WHITE ONLY: 2 TO 3 COLORS) ==================== -->
+  <!-- ==================== RIGHT COLUMN: SYSTEM INFO (BLACK & WHITE ONLY + ROTATING EARTH & STARS) ==================== -->
   <g transform="translate(480, 55)">
     <!-- Panel Box (Clean Monochrome) -->
     <rect x="0" y="0" width="675" height="530" rx="14" fill="#050811" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.2" />
@@ -243,6 +267,179 @@
       <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1.5">// SYSTEM.INFO</text>
       <text x="540" y="0" class="mono" font-size="10" fill="#71717a">[INIT_PROFILE]</text>
       <line x1="0" y1="10" x2="625" y2="10" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+    </g>
+
+    <!-- ==================== COSMIC CORNER: ROTATING EARTH & TWINKLING STARS ==================== -->
+    <!-- Background Twinkling Stars in Upper Right Header Space -->
+    <g class="stars-field">
+      <!-- Star 1: 4-point sparkle cross -->
+      <path d="M 470,42 Q 470,45 473,45 Q 470,45 470,48 Q 470,45 467,45 Q 470,45 470,42 Z" fill="#ffffff">
+        <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" repeatCount="indefinite" />
+      </path>
+      <!-- Star 2: Soft Star Dot -->
+      <circle cx="502" cy="38" r="1.2" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 3 -->
+      <circle cx="532" cy="46" r="0.9" fill="#ffffff">
+        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.1s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 4: 4-point sparkle cross -->
+      <path d="M 622,40 Q 622,43 625,43 Q 622,43 622,46 Q 622,43 619,43 Q 622,43 622,40 Z" fill="#00f3ff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite" />
+      </path>
+      <!-- Star 5 -->
+      <circle cx="636" cy="64" r="1.3" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 6 -->
+      <circle cx="630" cy="94" r="1.1" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 7: 4-point sparkle cross -->
+      <path d="M 638,120 Q 638,123 641,123 Q 638,123 638,126 Q 638,123 635,123 Q 638,123 638,120 Z" fill="#ffffff">
+        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.5s" repeatCount="indefinite" />
+      </path>
+      <!-- Star 8 -->
+      <circle cx="614" cy="134" r="1" fill="#00f3ff">
+        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.3s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 9 -->
+      <circle cx="510" cy="128" r="1.2" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.0s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 10: 4-point sparkle cross -->
+      <path d="M 488,72 Q 488,75 491,75 Q 488,75 488,78 Q 488,75 485,75 Q 488,75 488,72 Z" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite" />
+      </path>
+      <!-- Star 11 -->
+      <circle cx="468" cy="98" r="0.8" fill="#ffffff">
+        <animate attributeName="opacity" values="0.1;0.9;0.1" dur="1.6s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 12 -->
+      <circle cx="578" cy="35" r="1.4" fill="#ffffff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 13 -->
+      <circle cx="646" cy="46" r="1.0" fill="#00f3ff">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.0s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star 14 -->
+      <circle cx="496" cy="138" r="1.3" fill="#ffffff">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- SLOWLY ROTATING 3D EARTH GLOBE -->
+    <g id="rotating-earth-group">
+      <!-- Outer Atmospheric Corona Glow -->
+      <circle cx="565" cy="88" r="48" fill="url(#earth-glow-dark)" opacity="0.75" />
+
+      <!-- Clipped Globe Interior -->
+      <g clip-path="url(#earth-clip-dark)">
+        <!-- Deep Ocean Sphere Base -->
+        <circle cx="565" cy="88" r="42" fill="url(#earth-ocean-dark)" />
+
+        <!-- Seamlessly Rotating Continents & Landmasses Group -->
+        <g>
+          <!-- Smooth Horizontal Translation Loop (20s slow rotation) -->
+          <animateTransform 
+            attributeName="transform" 
+            type="translate" 
+            from="0, 0" 
+            to="-160, 0" 
+            dur="20s" 
+            repeatCount="indefinite" />
+
+          <!-- TILE 1: World Continents Map -->
+          <g transform="translate(485, 46)">
+            <!-- North America -->
+            <path d="M 12,14 Q 18,10 26,12 Q 34,14 36,22 Q 30,26 26,24 Q 22,28 24,34 Q 22,40 26,44 L 20,44 Q 16,36 14,28 Q 8,22 12,14 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Greenland -->
+            <path d="M 38,8 Q 44,7 44,12 Q 40,16 36,14 Z" fill="#00f3ff" opacity="0.75" />
+            <!-- South America -->
+            <path d="M 24,46 Q 32,48 35,56 Q 34,66 28,74 Q 24,76 22,70 Q 22,58 24,46 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Europe & Scandinavia -->
+            <path d="M 66,16 Q 74,13 80,16 Q 78,22 72,24 Q 65,22 66,16 Z" fill="#00f3ff" opacity="0.85" />
+            <path d="M 70,8 Q 74,6 76,12 Q 72,14 70,8 Z" fill="#00f3ff" opacity="0.75" />
+            <!-- Africa -->
+            <path d="M 64,28 Q 76,26 84,32 Q 88,44 82,56 Q 76,70 70,72 Q 64,66 63,50 Q 61,38 64,28 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Madagascar -->
+            <circle cx="85" cy="54" r="1.5" fill="#00f3ff" opacity="0.8" />
+            <!-- Eurasia -->
+            <path d="M 82,14 Q 106,10 134,16 Q 140,24 132,32 Q 120,30 114,38 Q 106,44 100,36 Q 92,38 90,30 Q 84,24 82,14 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- India -->
+            <path d="M 96,36 Q 102,42 104,46 Q 98,46 96,36 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Southeast Asia & Cambodia 🇰🇭 -->
+            <path d="M 112,36 Q 120,40 118,48 Q 112,46 112,36 Z" fill="#00f3ff" opacity="0.9" />
+            <!-- Cambodia / Phnom Penh Location Pulse Marker -->
+            <circle cx="115" cy="43" r="2.2" fill="#ffffff" filter="url(#glow)">
+              <animate attributeName="r" values="1.8;3.6;1.8" dur="1.8s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite" />
+            </circle>
+            <!-- Japan -->
+            <path d="M 134,26 Q 138,28 136,34 Q 132,32 134,26 Z" fill="#00f3ff" opacity="0.8" />
+            <!-- Australia -->
+            <path d="M 122,56 Q 136,54 138,64 Q 132,72 124,70 Q 118,64 122,56 Z" fill="#00f3ff" opacity="0.85" />
+            <circle cx="140" cy="70" r="1.2" fill="#00f3ff" opacity="0.8" />
+          </g>
+
+          <!-- TILE 2: Exact Duplicate for Seamless Continuous Horizon Loop (+160 offset) -->
+          <g transform="translate(645, 46)">
+            <!-- North America -->
+            <path d="M 12,14 Q 18,10 26,12 Q 34,14 36,22 Q 30,26 26,24 Q 22,28 24,34 Q 22,40 26,44 L 20,44 Q 16,36 14,28 Q 8,22 12,14 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Greenland -->
+            <path d="M 38,8 Q 44,7 44,12 Q 40,16 36,14 Z" fill="#00f3ff" opacity="0.75" />
+            <!-- South America -->
+            <path d="M 24,46 Q 32,48 35,56 Q 34,66 28,74 Q 24,76 22,70 Q 22,58 24,46 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Europe & Scandinavia -->
+            <path d="M 66,16 Q 74,13 80,16 Q 78,22 72,24 Q 65,22 66,16 Z" fill="#00f3ff" opacity="0.85" />
+            <path d="M 70,8 Q 74,6 76,12 Q 72,14 70,8 Z" fill="#00f3ff" opacity="0.75" />
+            <!-- Africa -->
+            <path d="M 64,28 Q 76,26 84,32 Q 88,44 82,56 Q 76,70 70,72 Q 64,66 63,50 Q 61,38 64,28 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Madagascar -->
+            <circle cx="85" cy="54" r="1.5" fill="#00f3ff" opacity="0.8" />
+            <!-- Eurasia -->
+            <path d="M 82,14 Q 106,10 134,16 Q 140,24 132,32 Q 120,30 114,38 Q 106,44 100,36 Q 92,38 90,30 Q 84,24 82,14 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- India -->
+            <path d="M 96,36 Q 102,42 104,46 Q 98,46 96,36 Z" fill="#00f3ff" opacity="0.85" />
+            <!-- Southeast Asia & Cambodia 🇰🇭 -->
+            <path d="M 112,36 Q 120,40 118,48 Q 112,46 112,36 Z" fill="#00f3ff" opacity="0.9" />
+            <!-- Cambodia / Phnom Penh Location Pulse Marker -->
+            <circle cx="115" cy="43" r="2.2" fill="#ffffff" filter="url(#glow)">
+              <animate attributeName="r" values="1.8;3.6;1.8" dur="1.8s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite" />
+            </circle>
+            <!-- Japan -->
+            <path d="M 134,26 Q 138,28 136,34 Q 132,32 134,26 Z" fill="#00f3ff" opacity="0.8" />
+            <!-- Australia -->
+            <path d="M 122,56 Q 136,54 138,64 Q 132,72 124,70 Q 118,64 122,56 Z" fill="#00f3ff" opacity="0.85" />
+            <circle cx="140" cy="70" r="1.2" fill="#00f3ff" opacity="0.8" />
+          </g>
+        </g>
+
+        <!-- 3D Holographic Globe Graticule (Curved Latitude & Longitude) -->
+        <g stroke="rgba(0, 243, 255, 0.22)" stroke-width="0.75" fill="none">
+          <!-- Equator -->
+          <line x1="523" y1="88" x2="607" y2="88" />
+          <!-- Latitudes -->
+          <ellipse cx="565" cy="72" rx="38" ry="8" />
+          <ellipse cx="565" cy="104" rx="38" ry="8" />
+          <ellipse cx="565" cy="58" rx="28" ry="6" />
+          <ellipse cx="565" cy="118" rx="28" ry="6" />
+          <!-- Longitudes (Meridians) -->
+          <ellipse cx="565" cy="88" rx="14" ry="42" />
+          <ellipse cx="565" cy="88" rx="28" ry="42" />
+          <line x1="565" y1="46" x2="565" y2="130" stroke-dasharray="2,2" />
+        </g>
+
+        <!-- 3D Sphere Shading / Day-Night Terminator Shadow -->
+        <circle cx="565" cy="88" r="42" fill="url(#earth-shading-dark)" />
+      </g>
+
+      <!-- Atmospheric Edge Rim Glow -->
+      <circle cx="565" cy="88" r="42.5" fill="none" stroke="#00f3ff" stroke-width="1.2" opacity="0.8" filter="url(#soft-glow)" />
+      <circle cx="565" cy="88" r="43.5" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
     </g>
 
     <!-- Terminal Command Execution -->
