@@ -13,24 +13,11 @@
       <stop offset="100%" stop-color="rgba(11, 17, 32, 0.85)" />
     </linearGradient>
 
-    <!-- Border Glow Gradient -->
+    <!-- Border Glow Gradient (Vibrant Cyberpunk) -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.5" />
       <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#00f3ff" stop-opacity="0.1" />
-    </linearGradient>
-
-    <!-- Accent Gradients -->
-    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f3ff" />
-      <stop offset="40%" stop-color="#38bdf8" />
-      <stop offset="80%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#f472b6" />
-    </linearGradient>
-
-    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f3ff" />
-      <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
 
     <!-- Filters -->
@@ -94,10 +81,10 @@
     </g>
   </g>
 
-  <!-- ==================== LEFT COLUMN: VISUAL IDENTITY ==================== -->
+  <!-- ==================== LEFT COLUMN: VISUAL IDENTITY (MANY COLORS) ==================== -->
   <g transform="translate(25, 55)">
     <!-- Panel Box -->
-    <rect x="0" y="0" width="435" height="530" rx="14" fill="url(#panel-grad)" stroke="rgba(0, 243, 255, 0.18)" stroke-width="1.2" />
+    <rect x="0" y="0" width="435" height="530" rx="14" fill="url(#panel-grad)" stroke="rgba(0, 243, 255, 0.22)" stroke-width="1.2" />
 
     <!-- Header -->
     <g transform="translate(20, 25)">
@@ -117,11 +104,11 @@
       <path d="M 8 339 L 8 347 L 16 347" stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.8" />
       <path d="M 387 339 L 387 347 L 379 347" stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.8" />
 
-      <!-- Coordinates & HUD info -->
-      <text x="16" y="24" class="mono" font-size="9" fill="#00f3ff" opacity="0.7">LAT: 11.5564° N</text>
-      <text x="16" y="36" class="mono" font-size="9" fill="#00f3ff" opacity="0.7">LON: 104.9282° E</text>
-      <text x="315" y="24" class="mono" font-size="9" fill="#38bdf8" opacity="0.8">LOC: KH / PP</text>
-      <text x="305" y="36" class="mono" font-size="9" fill="#10b981" opacity="0.8">SYS: ACTIVE</text>
+      <!-- Coordinates & HUD info (Vibrant Colors) -->
+      <text x="16" y="24" class="mono" font-size="9" fill="#00f3ff" opacity="0.8">LAT: 11.5564° N</text>
+      <text x="16" y="36" class="mono" font-size="9" fill="#00f3ff" opacity="0.8">LON: 104.9282° E</text>
+      <text x="315" y="24" class="mono" font-size="9" fill="#38bdf8" opacity="0.9">LOC: KH / PP</text>
+      <text x="305" y="36" class="mono" font-size="9" fill="#10b981" opacity="0.9">SYS: ACTIVE</text>
 
       <!-- WIREFRAME & ASCII PORTRAIT -->
       <g transform="translate(30, 25)">
@@ -177,7 +164,7 @@
         <path d="M 168 152 L 165 172 L 171 172" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.7" />
         <path d="M 152 190 Q 168 196, 184 190" stroke="#38bdf8" stroke-width="1.8" fill="none" opacity="0.8" />
 
-        <!-- Headphones / Headset Accent -->
+        <!-- Headphones / Headset Accent (Neon Purple) -->
         <rect x="104" y="125" width="12" height="30" rx="4" fill="rgba(168, 85, 247, 0.4)" stroke="#a855f7" stroke-width="1.5" />
         <rect x="220" y="125" width="12" height="30" rx="4" fill="rgba(168, 85, 247, 0.4)" stroke="#a855f7" stroke-width="1.5" />
         <path d="M 110 125 Q 168 35, 225 125" stroke="#a855f7" stroke-width="2" fill="none" opacity="0.6" />
@@ -201,7 +188,7 @@
         </g>
       </g>
 
-      <!-- ANIMATED SCANLINE -->
+      <!-- ANIMATED SCANLINE (Neon Cyan) -->
       <line x1="4" y1="20" x2="391" y2="20" stroke="#00f3ff" stroke-width="1.8" opacity="0.75" filter="url(#glow)">
         <animate attributeName="y1" values="20;345;20" dur="4.2s" repeatCount="indefinite" />
         <animate attributeName="y2" values="20;345;20" dur="4.2s" repeatCount="indefinite" />
@@ -209,7 +196,7 @@
       </line>
     </g>
 
-    <!-- Bottom Left Specs & Audio/Activity Pulse -->
+    <!-- Bottom Left Specs & Audio/Activity Pulse (Many Colors) -->
     <g transform="translate(20, 420)">
       <!-- Left side system stats -->
       <g class="mono" font-size="11">
@@ -219,7 +206,7 @@
         <text x="0" y="82" fill="#64748b">> STATUS: <tspan fill="#00f3ff" font-weight="700">BUILDING_EXCELLENCE</tspan></text>
       </g>
 
-      <!-- Equalizer Activity Visualizer -->
+      <!-- Equalizer Activity Visualizer (Multi-color Neon Bars) -->
       <g transform="translate(330, 20)">
         <rect x="0" y="15" width="4" height="25" rx="2" fill="#00f3ff">
           <animate attributeName="height" values="12;40;18;35;12" dur="1.2s" repeatCount="indefinite" />
@@ -246,69 +233,69 @@
     </g>
   </g>
 
-  <!-- ==================== RIGHT COLUMN: SYSTEM INFO ==================== -->
+  <!-- ==================== RIGHT COLUMN: SYSTEM INFO (BLACK & WHITE ONLY: 2 TO 3 COLORS) ==================== -->
   <g transform="translate(480, 55)">
-    <!-- Panel Box -->
-    <rect x="0" y="0" width="675" height="530" rx="14" fill="url(#panel-grad)" stroke="rgba(0, 243, 255, 0.18)" stroke-width="1.2" />
+    <!-- Panel Box (Clean Monochrome) -->
+    <rect x="0" y="0" width="675" height="530" rx="14" fill="#050811" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.2" />
 
     <!-- Header -->
     <g transform="translate(25, 25)">
-      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#00f3ff" letter-spacing="1.5">// SYSTEM.INFO</text>
-      <text x="540" y="0" class="mono" font-size="10" fill="#64748b">[INIT_PROFILE]</text>
-      <line x1="0" y1="10" x2="625" y2="10" stroke="rgba(0, 243, 255, 0.15)" stroke-width="1" />
+      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1.5">// SYSTEM.INFO</text>
+      <text x="540" y="0" class="mono" font-size="10" fill="#71717a">[INIT_PROFILE]</text>
+      <line x1="0" y1="10" x2="625" y2="10" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
     </g>
 
     <!-- Terminal Command Execution -->
     <g transform="translate(25, 55)">
       <text x="0" y="0" class="mono" font-size="13">
-        <tspan fill="#a855f7" font-weight="700">bunheng@developer</tspan>
-        <tspan fill="#64748b">:</tspan>
-        <tspan fill="#38bdf8">~</tspan>
-        <tspan fill="#94a3b8">$ ./profile.sh --name "Her Bunheng"</tspan>
+        <tspan fill="#ffffff" font-weight="700">bunheng@developer</tspan>
+        <tspan fill="#71717a">:</tspan>
+        <tspan fill="#a1a1aa">~</tspan>
+        <tspan fill="#e4e4e7">$ ./profile.sh --name "Her Bunheng"</tspan>
       </text>
     </g>
 
     <!-- Main Identity Header -->
     <g transform="translate(25, 95)">
-      <text x="0" y="0" class="sans" font-size="30" font-weight="800" fill="url(#name-grad)" letter-spacing="-0.5">
+      <text x="0" y="0" class="sans" font-size="30" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
         HER BUNHENG
       </text>
       
       <!-- Sub-Role with Blinking Cursor -->
       <g transform="translate(0, 22)">
-        <text x="0" y="0" class="mono" font-size="13" font-weight="600" fill="#38bdf8">
+        <text x="0" y="0" class="mono" font-size="13" font-weight="600" fill="#a1a1aa">
           > Full-Stack &amp; Mobile Developer · Creative Technologist
         </text>
-        <rect x="475" y="-12" width="8" height="15" fill="#00f3ff">
+        <rect x="475" y="-12" width="8" height="15" fill="#ffffff">
           <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" />
         </rect>
       </g>
     </g>
 
-    <!-- Profile Specs JSON Box -->
+    <!-- Profile Specs JSON Box (Monochrome Black & White) -->
     <g transform="translate(25, 140)">
-      <rect x="0" y="0" width="625" height="100" rx="8" fill="#050811" stroke="rgba(148, 163, 184, 0.18)" stroke-width="1" />
+      <rect x="0" y="0" width="625" height="100" rx="8" fill="#000000" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1" />
       
       <g transform="translate(18, 20)" class="mono" font-size="11.5">
-        <text x="0" y="0" fill="#64748b">const <tspan fill="#38bdf8">profile</tspan> = {</text>
+        <text x="0" y="0" fill="#71717a">const <tspan fill="#ffffff">profile</tspan> = {</text>
         <text x="18" y="18">
-          <tspan fill="#94a3b8">name:</tspan> <tspan fill="#10b981">"Her Bunheng"</tspan>,
-          <tspan fill="#94a3b8">location:</tspan> <tspan fill="#10b981">"Phnom Penh, Cambodia 🇰🇭"</tspan>
+          <tspan fill="#71717a">name:</tspan> <tspan fill="#ffffff">"Her Bunheng"</tspan>,
+          <tspan fill="#71717a">location:</tspan> <tspan fill="#ffffff">"Phnom Penh, Cambodia 🇰🇭"</tspan>
         </text>
         <text x="18" y="36">
-          <tspan fill="#94a3b8">focus:</tspan> [<tspan fill="#f59e0b">"Web Apps"</tspan>, <tspan fill="#f59e0b">"Mobile Dev (Expo)"</tspan>, <tspan fill="#f59e0b">"Interactive UIs"</tspan>],
+          <tspan fill="#71717a">focus:</tspan> [<tspan fill="#ffffff">"Web Apps"</tspan>, <tspan fill="#ffffff">"Mobile Dev (Expo)"</tspan>, <tspan fill="#ffffff">"Interactive UIs"</tspan>],
         </text>
         <text x="18" y="54">
-          <tspan fill="#94a3b8">portfolio:</tspan> <tspan fill="#00f3ff">"https://mk-search.xyz"</tspan>,
-          <tspan fill="#94a3b8">open_for:</tspan> <tspan fill="#c084fc">"Innovative Projects"</tspan>
+          <tspan fill="#71717a">portfolio:</tspan> <tspan fill="#ffffff">"https://mk-search.xyz"</tspan>,
+          <tspan fill="#71717a">open_for:</tspan> <tspan fill="#ffffff">"Innovative Projects"</tspan>
         </text>
-        <text x="0" y="70" fill="#64748b">};</text>
+        <text x="0" y="70" fill="#71717a">};</text>
       </g>
     </g>
 
-    <!-- Tech Stack Pill Grid -->
+    <!-- Tech Stack Pill Grid (Monochrome Black & White) -->
     <g transform="translate(25, 260)">
-      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">
+      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#71717a" letter-spacing="1">
         // CORE TECHNOLOGY STACK
       </text>
 
@@ -316,37 +303,37 @@
       <g transform="translate(0, 15)">
         <!-- Vue.js -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="92" height="26" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#10b981" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">Vue.js</text>
+          <rect x="0" y="0" width="92" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">Vue.js</text>
         </g>
 
         <!-- React Native -->
         <g transform="translate(100, 0)">
-          <rect x="0" y="0" width="130" height="26" rx="6" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#38bdf8" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">React Native</text>
+          <rect x="0" y="0" width="130" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">React Native</text>
         </g>
 
         <!-- TypeScript -->
         <g transform="translate(238, 0)">
-          <rect x="0" y="0" width="115" height="26" rx="6" fill="rgba(59, 130, 246, 0.1)" stroke="rgba(59, 130, 246, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#3b82f6" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">TypeScript</text>
+          <rect x="0" y="0" width="115" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">TypeScript</text>
         </g>
 
         <!-- JavaScript -->
         <g transform="translate(361, 0)">
-          <rect x="0" y="0" width="112" height="26" rx="6" fill="rgba(234, 179, 8, 0.1)" stroke="rgba(234, 179, 8, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#eab308" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">JavaScript</text>
+          <rect x="0" y="0" width="112" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">JavaScript</text>
         </g>
 
         <!-- Expo -->
         <g transform="translate(481, 0)">
-          <rect x="0" y="0" width="85" height="26" rx="6" fill="rgba(168, 85, 247, 0.1)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#a855f7" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">Expo</text>
+          <rect x="0" y="0" width="85" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">Expo</text>
         </g>
       </g>
 
@@ -354,81 +341,81 @@
       <g transform="translate(0, 48)">
         <!-- TailwindCSS -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="118" height="26" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="rgba(6, 182, 212, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#06b6d4" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">TailwindCSS</text>
+          <rect x="0" y="0" width="118" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">TailwindCSS</text>
         </g>
 
         <!-- Node.js -->
         <g transform="translate(126, 0)">
-          <rect x="0" y="0" width="95" height="26" rx="6" fill="rgba(34, 197, 94, 0.1)" stroke="rgba(34, 197, 94, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#22c55e" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">Node.js</text>
+          <rect x="0" y="0" width="95" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">Node.js</text>
         </g>
 
         <!-- Vite -->
         <g transform="translate(229, 0)">
-          <rect x="0" y="0" width="80" height="26" rx="6" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#c084fc" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">Vite</text>
+          <rect x="0" y="0" width="80" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">Vite</text>
         </g>
 
         <!-- Git & GitHub -->
         <g transform="translate(317, 0)">
-          <rect x="0" y="0" width="112" height="26" rx="6" fill="rgba(249, 115, 22, 0.1)" stroke="rgba(249, 115, 22, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#f97316" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">Git/GitHub</text>
+          <rect x="0" y="0" width="112" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">Git/GitHub</text>
         </g>
 
         <!-- REST API / Cloud -->
         <g transform="translate(437, 0)">
-          <rect x="0" y="0" width="129" height="26" rx="6" fill="rgba(244, 63, 94, 0.1)" stroke="rgba(244, 63, 94, 0.35)" stroke-width="1" />
-          <circle cx="12" cy="13" r="3.5" fill="#f43f5e" />
-          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#f1f5f9">REST API / Vercel</text>
+          <rect x="0" y="0" width="129" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#ffffff" />
+          <text x="22" y="17" class="mono" font-size="10.5" font-weight="600" fill="#ffffff">REST API / Vercel</text>
         </g>
       </g>
     </g>
 
-    <!-- Selected Projects Showcase -->
+    <!-- Selected Projects Showcase (Monochrome Black & White) -->
     <g transform="translate(25, 360)">
-      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">
+      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#71717a" letter-spacing="1">
         // SELECTED FEATURED REPOSITORIES
       </text>
 
       <g transform="translate(0, 15)">
         <!-- Project 1 -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="625" height="32" rx="6" fill="#050811" stroke="rgba(0, 243, 255, 0.15)" stroke-width="1" />
-          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#00f3ff">[01] mk-search</text>
-          <text x="150" y="20" class="mono" font-size="10.5" fill="#94a3b8">Search Engine &amp; Web Platform</text>
-          <text x="500" y="20" class="mono" font-size="10" fill="#10b981">mk-search.xyz</text>
+          <rect x="0" y="0" width="625" height="32" rx="6" fill="#000000" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1" />
+          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#ffffff">[01] mk-search</text>
+          <text x="150" y="20" class="mono" font-size="10.5" fill="#71717a">Search Engine &amp; Web Platform</text>
+          <text x="500" y="20" class="mono" font-size="10" fill="#ffffff">mk-search.xyz</text>
         </g>
 
         <!-- Project 2 -->
         <g transform="translate(0, 38)">
-          <rect x="0" y="0" width="625" height="32" rx="6" fill="#050811" stroke="rgba(0, 243, 255, 0.15)" stroke-width="1" />
-          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#38bdf8">[02] profile-app</text>
-          <text x="150" y="20" class="mono" font-size="10.5" fill="#94a3b8">Mobile App built with React Native + Expo</text>
-          <text x="500" y="20" class="mono" font-size="10" fill="#a855f7">Expo / Mobile</text>
+          <rect x="0" y="0" width="625" height="32" rx="6" fill="#000000" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1" />
+          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#ffffff">[02] profile-app</text>
+          <text x="150" y="20" class="mono" font-size="10.5" fill="#71717a">Mobile App built with React Native + Expo</text>
+          <text x="500" y="20" class="mono" font-size="10" fill="#ffffff">Expo / Mobile</text>
         </g>
 
         <!-- Project 3 -->
         <g transform="translate(0, 76)">
-          <rect x="0" y="0" width="625" height="32" rx="6" fill="#050811" stroke="rgba(0, 243, 255, 0.15)" stroke-width="1" />
-          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#c084fc">[03] UI_Train_AI</text>
-          <text x="150" y="20" class="mono" font-size="10.5" fill="#94a3b8">Interactive UI for Training AI models &amp; Zip Export</text>
-          <text x="500" y="20" class="mono" font-size="10" fill="#38bdf8">TypeScript</text>
+          <rect x="0" y="0" width="625" height="32" rx="6" fill="#000000" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1" />
+          <text x="14" y="20" class="mono" font-size="11" font-weight="700" fill="#ffffff">[03] UI_Train_AI</text>
+          <text x="150" y="20" class="mono" font-size="10.5" fill="#71717a">Interactive UI for Training AI models &amp; Zip Export</text>
+          <text x="500" y="20" class="mono" font-size="10" fill="#ffffff">TypeScript</text>
         </g>
       </g>
     </g>
 
     <!-- Bottom Command Line -->
     <g transform="translate(25, 498)">
-      <line x1="0" y1="0" x2="625" y2="0" stroke="rgba(0, 243, 255, 0.15)" stroke-width="1" />
-      <text x="0" y="18" class="mono" font-size="11" fill="#64748b">
-        bunheng@dev:~$ <tspan fill="#38bdf8">contact --email</tspan> <tspan fill="#00f3ff">"hengnun68@gmail.com"</tspan>
+      <line x1="0" y1="0" x2="625" y2="0" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+      <text x="0" y="18" class="mono" font-size="11" fill="#71717a">
+        bunheng@dev:~$ <tspan fill="#a1a1aa">contact --email</tspan> <tspan fill="#ffffff">"hengnun68@gmail.com"</tspan>
       </text>
-      <text x="525" y="18" class="mono" font-size="10" fill="#10b981">[STATUS: READY]</text>
+      <text x="525" y="18" class="mono" font-size="10" fill="#ffffff">[STATUS: READY]</text>
     </g>
   </g>
 </svg>
